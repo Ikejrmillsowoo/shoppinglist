@@ -51,7 +51,7 @@ const reducer = (value, action) => {
         const dataJSON = await data.json()
 
         if (dataJSON){
-            return await ({
+            return ({
                 data: dataJSON,
                 error: false
             })
