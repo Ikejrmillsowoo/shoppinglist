@@ -39,7 +39,6 @@ const Lists = ({ lists, loading, error, getListsRequest, match, history }) => {
       getListsRequest()
     }
   }, [lists, getListsRequest])
-  console.log(lists)
   return (
     !loading && !error ? (
       <>

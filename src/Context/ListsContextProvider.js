@@ -44,7 +44,7 @@ const reducer = (value, action) => {
     }
 }
 
-async function fetchData(dataSource)
+    async function fetchData(dataSource)
 {
     try {
         const data = await fetch(dataSource)
@@ -84,7 +84,7 @@ const ListsContextProvider = ({ children }) => {
     }
 
     const getListRequest = async id => {
-        const result = await fetchData('https://my-json-server.typicode.com/PacktPubilshing/React-Projects/lists')
+        const result = await fetchData('https://my-json-server.typicode.com/PacktPubilshing/React-Projects/list')
         if (result.data && result.data.hasOwnProperty('id')) {
             dispatch({
                 type: 'GET_LIST_SUCCESS',
